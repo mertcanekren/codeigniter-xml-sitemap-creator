@@ -10,7 +10,7 @@ $static_pages = array(
   'contact'
 );
 `
-// generate sitemap file static.xml 
+// generate sitemap file static.xml <br/>
 $this->my_xml_sitemap->writesitemap('sitemaps',$static_pages,'1.0','weekly','static');
 `
 // generate sitemap index file sitemaps_index.xml 
