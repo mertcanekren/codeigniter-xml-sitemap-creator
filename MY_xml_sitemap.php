@@ -48,9 +48,9 @@
 			$indexfile.=$indexline;
 		}
 		if(write_file('./'.$directory.'/sitemaps_index.xml', $indexfile, 'w+')){     		
-     		return true;
+			return true;
 		}else{
-     		return false;
+			return false;
 		}
 	}
 	
