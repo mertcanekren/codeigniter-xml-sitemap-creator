@@ -8,7 +8,7 @@
  * @subpackage    	Libraries
  * @category    	Libraries
  * @author        	Mertcan Ekren
- * @license         http://en.wikipedia.org/wiki/MIT_License
+ * @license		http://en.wikipedia.org/wiki/MIT_License
  */
  Class My_xml_sitemap {
 
@@ -64,7 +64,7 @@
 	 *  @param string $filename		Oluşturulacak site haritası dosyasının adı.
 	 */
 	function writesitemap($directory,$links=array(),$priority,$changefreq,$filename){
-    	$items = array();
+		$items = array();
 		$items[] = $this->xml_header;
 		foreach($links as $link){
 			$items[] = "
@@ -80,13 +80,13 @@
 			$data.=$item;
 		}
 		if(write_file('./'.$directory.'/'.$filename.'.xml', $data, 'w+')){
-     		if(write_file('./'.$directory.'/'.$filename.'.xml.gz', gzencode($data, 9), 'w+')){
-     			return true;
-     		}else{
-     			return false;
-     		}
+			if(write_file('./'.$directory.'/'.$filename.'.xml.gz', gzencode($data, 9), 'w+')){
+				return true;
+			}else{
+				return false;
+			}
 		}else{
-     		return false;
+			return false;
 		}
     }
 
