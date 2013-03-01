@@ -58,10 +58,10 @@
 	 *  Gönderilen sitemap değerlerine göre sitemap dosyası oluşturur.
 	 *
 	 *  @param string $directory	Site haritalarının bulunacağı dizin.
-	 *  @param array $links			Site haritası oluşturulacak linkler.
-	 *  @param string $priority		Priority değeri. http://www.sitemaps.org/protocol.html
+	 *  @param array $links		Site haritası oluşturulacak linkler.
+	 *  @param string $priority	Priority değeri. http://www.sitemaps.org/protocol.html
 	 *  @param string $changefreq	Changefreq değeri. http://www.sitemaps.org/protocol.html
-	 *  @param string $filename		Oluşturulacak site haritası dosyasının adı.
+	 *  @param string $filename	Oluşturulacak site haritası dosyasının adı.
 	 */
 	function writesitemap($directory,$links=array(),$priority,$changefreq,$filename){
 		$items = array();
