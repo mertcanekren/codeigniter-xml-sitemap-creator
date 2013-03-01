@@ -1,7 +1,7 @@
 codeigniter-xml-sitemap-creator
 ===============================
 Example
-
+`
 $this->load->library('My_xml_sitemap');
 
 $static_pages = array(
@@ -9,7 +9,7 @@ $static_pages = array(
   'about',
   'contact'
 );
-
+`
 // generate sitemap file static.xml 
 $this->my_xml_sitemap->writesitemap('sitemaps',$static_pages,'1.0','weekly','static');
 `
